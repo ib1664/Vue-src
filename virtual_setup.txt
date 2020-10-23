@@ -1,12 +1,13 @@
-python3 -m venv envPROJECT
+python3 -m venv envPROJECT	py -m venv envPROJECT
 
-source envPROJECT/bin/activate
+source envPROJECT/bin/activate		envPROJECT\Scripts\activate
 
 You can confirm you’re in the virtual environment by checking the location of your Python interpreter, 
 it should point to the env directory.
 
-which python
-.../envPROJECT/bin/python
+which python				where python
+.../envPROJECT/bin/python		.../env/bin/python.exe
+
 
 If you want to switch projects or otherwise leave your virtual environment, simply run:
 
@@ -15,9 +16,14 @@ deactivate
 Now that you’re in your virtual environment you can install packages:
 
 pip install myPackage
-
-
+pip install -r requirements.txt
 
 
 
 https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/
+
+Python Tutorial: VENV (Windows) - How to Use Virtual Environments with the Built-In venv Module
+https://www.youtube.com/watch?v=APOPm01BVrk
+
+Python Tutorial: VENV (Mac & Linux) - How to Use Virtual Environments with the Built-In venv Module
+https://www.youtube.com/watch?v=Kg1Yvry_Ydk
