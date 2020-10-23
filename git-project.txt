@@ -1,0 +1,70 @@
+https://github.sydney.edu.au/2020-INTERNET-SOFTWARE-PLATFORM/project_2
+
+https://github.sydney.edu.au/2020-INTERNET-SOFTWARE-PLATFORM/project_2.git
+========================================================================================================
+project_2 (Unicentral)
+
+A web application that allows students to review their courses & access reviews.
+Dependencies
+
+    python 3.8.5
+
+Local Development Environment Set Up
+
+Software Requirements:
+
+    python3
+    npm / nodejs
+    docker & docker-compose
+
+Configuration Credentials
+
+Let me know when you need it, I will send it across.
+
+Two config files needed:
+
+    .env (placed in project_2/)
+    .env.development.local (placed in project_2/front/)
+    secrets.json (placed in project_2/back/)
+
+First time set up (Do this once)
+
+Make sure you have set up the configuration files listed in the section above.
+Backend
+
+In your unicentral/back directory, run
+
+# Make sure your current python version 3.8.5
+python3 -m venv $(pwd)/venv # sets up python virtual environment (do this only once)
+source venv/bin/activate # switch your shell into your newly created python virtual environment. (use this command to switch into your virtual env)
+pip3 install -r requirements.txt # installs all the application's dependencies while in your python virtual environment.
+
+# To start up backend, run:
+docker-compose up -d # starts up the backend database.
+
+    Use datagrip to connect to your database on port 5432 with the username and password listed in the .env file in your project root folder.
+    Create a database called unicentral in your postgres database.
+    Within the unicentral database, create two schemas called admin and structure.
+    You are now ready to follow the To boot up backend instructions, following on from running python3 run.py.
+
+Frontend
+
+In your unicentral/front directory, run
+
+npm install
+
+To boot up backend
+
+In your unicentral/ directory, run
+
+docker-compose up -d
+
+In your unicentral/back directory, run
+
+python3 run.py
+
+To boot up frontend
+
+In your unicentral/front directory, run
+
+npm run serve
