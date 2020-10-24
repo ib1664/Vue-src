@@ -1,0 +1,22 @@
+createuser
+
+sudo apt-get install postgresql-client-common
+
+sudo su postgres 
+
+sudo -u postgres psql
+
+u - postgres
+
+sudo apt-get install pgadmin3
+
+ sudo apt-get install docker.io
+
+sudo apt-get install docker
+
+sudo chown -R iggy:iggy vue-project1/
+
+sudo apt-get install -y nodejs
+
+pgadmin3 
+

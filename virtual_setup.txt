@@ -1,4 +1,4 @@
-python3 -m venv envPROJECT	py -m venv envPROJECT
+python3 -m venv --without-pip envPROJECT	py -m venv envPROJECT
 
 source envPROJECT/bin/activate		envPROJECT\Scripts\activate
 
@@ -8,6 +8,11 @@ it should point to the env directory.
 which python				where python
 .../envPROJECT/bin/python		.../env/bin/python.exe
 
+pip install [package name]
+
+pip list
+
+pip freeze > requirements.txt
 
 If you want to switch projects or otherwise leave your virtual environment, simply run:
 
@@ -27,3 +32,78 @@ https://www.youtube.com/watch?v=APOPm01BVrk
 
 Python Tutorial: VENV (Mac & Linux) - How to Use Virtual Environments with the Built-In venv Module
 https://www.youtube.com/watch?v=Kg1Yvry_Ydk
+
+
+
+{
+"environment": "development",
+"database": {
+"username": "unicentral",
+"password": "unicentral",
+"host": "localhost"
+},
+"flask_secret_key": "bananasCentral*(539)$",
+"log_level": "DEBUG"
+}
+
+
+POSTGRES_USER=unicentral
+POSTGRES_PASSWORD=unicentral
+
+VUE_APP_API=http://localhost:5522/api/
+
+==============================================================================================
+
+sudo apt install postgresql postgresql-contrib
+
+sudo -i -u postgres
+psql
+
+sudo -u postgres psql		= password 
+
+==========================================================================================
+
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+
+sudo apt-get update
+
+sudo apt-get -y install postgresql
+
+=================================================================================================
+apt-get install postgresql-12
+=================================================================================================
+
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+
+sudo apt-get update
+
+sudo apt-get -y install postgresql
+
+=========================================================================
+
+Commands
+
+ - Check postgres status
+sudo service postgresql status
+
+ - Start postgres (if not started automatically)
+sudo service postgresql start
+
+ - Start pgadmin (once instlled)
+sudo pgadmin
+
+- Connect to postgresql (cli)
+
+sudo -u postgres psql
+
+pgadmin3
+
+# To start up backend, run:
+docker-compose up -d # starts up the backend database.
+
+
+
