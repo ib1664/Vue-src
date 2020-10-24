@@ -1,0 +1,67 @@
+sudo -u postgresql psql
+
+\l			[To see all data base]
+
+create database mydb3;	[To create mydb3]
+
+\c mydb3;		[To access mydb3]
+
+[While Inside mydb3]
+create schema mydb3schema;
+
+create table mydb3schema.table1 (id integer, password CHAR(10));
+
+\d mydb3schema.table1;
+
+select * from pg_catalog.pg_tables;		[To see all tables in system]
+
+select * from pg_catalog.pg_tables where schemaname != 'infrmation_schema' and schemaname != 'pg_catalog';
+
+insert into mydb3schema.table1 values(1, '1');
+insert into mydb3schema.table1 values(2, '2');
+
+select * from mydb3schema.table1;
+
+truncate mydb3schema.table1;
+
+delete from mydb3schema.table1;
+
+drop table mydb3schema.table1;
+
+https://www.youtube.com/watch?v=jNIdcrQsfYo
+https://www.youtube.com/watch?v=fD7x8hd9yE4
+
+psql -U postgres -h localhost
+
+create user iggy with password 'mypass'
+
+
+=========================================================================================
+locate bin/postgres => /usr/lib/postgresql/9.3/bin/postgres
+
+/usr/lib/postgresql/9.3/bin/postgres -V		=>postgres (PostgreSQL) 9.3.10
+
+[View client version]
+psql -V		OR	locate bin/psql
+/usr/lib/postgresql/9.3/bin/psql -V
+
+SELECT version();
+
+SHOW server_version;
+
+\! psql -V
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
