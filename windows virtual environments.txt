@@ -1,0 +1,27 @@
+vue add vuetify
+
+pip list
+
+python -m venv [project_name]
+
+[project_name]\Scripts\activate.bat
+
+where python 
+
+pip list
+
+pip install [package_name]
+
+pip install -r requirements.txt
+
+pip freeze
+
+deactivates 
+
+rmdir [project_name] /s
+
+python -m venv [project_name] --system-site-packages 		
+
+pip list --local 
+
+https://www.youtube.com/watch?v=APOPm01BVrk
