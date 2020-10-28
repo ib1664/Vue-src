@@ -105,5 +105,10 @@ pgadmin3
 # To start up backend, run:
 docker-compose up -d # starts up the backend database.
 
+==========================================================================
+
+sudo lsof -t -i:5432
+
+sudo kill -9
 
 

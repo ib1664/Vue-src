@@ -1,4 +1,4 @@
-sudo -u postgresql psql
+sudo -u postgres psql
 
 \l			[To see all data base]
 
@@ -15,7 +15,7 @@ create table mydb3schema.table1 (id integer, password CHAR(10));
 
 select * from pg_catalog.pg_tables;		[To see all tables in system]
 
-select * from pg_catalog.pg_tables where schemaname != 'infrmation_schema' and schemaname != 'pg_catalog';
+
 
 insert into mydb3schema.table1 values(1, '1');
 insert into mydb3schema.table1 values(2, '2');
