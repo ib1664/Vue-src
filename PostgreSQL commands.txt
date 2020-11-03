@@ -24,9 +24,13 @@ select * from mydb3schema.table1;
 
 truncate mydb3schema.table1;
 
-delete from mydb3schema.table1;
+delete from mydb3schema.table1;		[Deletes all rows in table]
 
 drop table mydb3schema.table1;
+
+select * from pg_catalog.pg_tables where schemaname != 'information_schema' and schemeaname! = 'pg_catalog';
+
+\q	[Exits database]
 
 https://www.youtube.com/watch?v=jNIdcrQsfYo
 https://www.youtube.com/watch?v=fD7x8hd9yE4

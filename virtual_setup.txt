@@ -111,4 +111,11 @@ sudo lsof -t -i:5432
 
 sudo kill -9
 
+docker-compose up -d # starts up the backend database.
+
+npm install 
+
+python3 run.py
+
+
 
