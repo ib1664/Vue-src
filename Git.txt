@@ -1,0 +1,123 @@
+git config --list
+git config --global user.name "####"
+git config --global user.email "####"
+git config user.email
+
+git config --list
+
+git help
+git help commit
+
+pwd
+cd ~	=====Home=====
+cd ..
+ls	=====Directory=====
+ls -la
+cd Desktop
+
+--Create Repesitory--
+git init
+git log		=====View history of changes=====
+git log --author="iggy"
+
+git status
+
+git add TEXT.txt
+git add .	=====Tells Git you made changes to project=====
+git add -A	=====Puts any files not track into staging area=====
+git commit -m "COMMENTS"		=====Sets a save point to rollback=====
+git commit -am "COMMENTS"	=====Adds and commits files at the same time, works only on modified files not new one=====
+
+ssh-keygen -t rsa - 4096 -C "ignatius1664@outlook.com"		=====Generates a Private key and public key. Copy & Paste key in public key to GitHub SSH and GPG keys		https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connecting-to-github-with-ssh
+eval "$(ssh-agent -s)"		======Start ssh-agent
+vim ~/.ssh/config		====== Load private keys into ssh-agent and	https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+Host *
+	AddKeysToAgent yes
+	UseKeychain yes
+	Identify ~/.ssn/mykey
+
+git push -u origion master 	=====Upload to GitHub, set default to allways point to origin master
+git pull origin master		=====Gets and update local folder with that of github
+
+--Branching and Merging--
+git branch	=====View all branchs=====
+git branch myNewBranch		
+git checkout -b myNewBranch	=====Creates a new branch=====
+git checkout myNewBranch  =====Enters the branch=====		
+git checkout master 	=====Goes to master repository=====
+
+git checkout myNewBranch	=====Switch branches 
+
+git push --set-upstream origin myNewBranch	OR	git push -u origin myNewBranch
+
+git diff myNewBranch	===Compares the difference between a branch and the master branch===
+
+git merge myNewBranch	=====Updates the master with the new branch, you must be in the master folder=====
+git merge master 	=====Keeps the myNewBranch you are on up to date with the master so not left behind 
+
+git remote add origin https://github.sydney.edu.au/iedi7457/ELEC9602.git	====Push a local git repo to github, must create an empty repository on github first
+
+git diff	=====compares working copy vs repository, press "q" if it says "END"=====
+git diff -- staged	=====compares staging vs repository=====
+
+git branch -d myNewBranch	=====Deletes the branch=====
+
+git rm TEXT.txt		=====removes a file=====
+git rm -f TEXT.txt	=====Force removes a file=====
+git mv TEXT.txt NEWTEXT.txt	=====Renames file===== 
+git mv TEXT.txt NewFolder/NEWTEXT.txt 	=====Moves a file=====
+rm -rf .git
+
+git reset			----- Reverse the last add command made on a file====
+git reset HEAD~1		=====Goes back one commit undoing the last commit=====
+git reset HEAD TEXT.txt 	=====Returns a file from staging back to working=====
+git reset --hard c92f561352956f70efafc3921de14202ec140472
+
+git checkout -- TEXT.txt		=====Undo changes made in a working file from repository=====
+git checkout 8a9ac36b -- TEXT.txt	=====Reverts a file in a repository back to an older version and puts it in working area, use git log first to get ID=====
+
+--Create Remote--
+git remote add NAME http://github.com/username/TEXT.txt		=====Setting up a connection between local pc and github=====
+git remote add origin git@github.com:ib1664/repositoryName.git	=====Setting up a connection between a project folder on local pc to a newly created empty project folder on github
+git remote -v	=====List all remotes=====
+
+git clone http://github.com/username/FOLDER.git
+
+git push -u origin myNewBranch		===Pushes the changes made to a branch into github, must be on the myNewBranch===
+					===Same as: git push --set-upstream myNewBranch===
+
+git push origin --delete myNewBranch 	=====Deletes the branch in github=====
+
+--Creating branch in remote--
+git branch myNewBranch		
+git checkout myNewBranch
+git add --all
+git commit -m "New branch"
+git push origion myNewBranch
+
+--Getting branch from remote--
+git fetch origion myNewBranch:myNewBranch	=====Downloads branch and creates new branch in local=====
+git push origion :myNewBranch		=====Deletes branch in remote=====
+
+j move one line down
+k move one line up
+<space> move one page down
+b move one page up
+h show the help
+
+
+…or create a new repository on the command line
+echo "# ELEC9602" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.sydney.edu.au/iedi7457/ELEC9602.git
+git push -u origin master
+
+…or push an existing repository from the command line
+git remote add origin https://github.sydney.edu.au/iedi7457/ELEC9602.git
+git push -u origin master
+
+What is rebasing
+C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files\Java\jdk1.8.0_40\bin;C:\Program Files\Java\jre1.8.0_40\bin;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\

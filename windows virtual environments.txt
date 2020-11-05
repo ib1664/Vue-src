@@ -2,9 +2,9 @@ vue add vuetify
 
 pip list
 
-python -m venv [project_name]
+python -m venv [Environment Name]
 
-[project_name]\Scripts\activate.bat
+[Environment Name]\Scripts\activate.bat
 
 where python 
 
@@ -15,6 +15,8 @@ pip install [package_name]
 pip install -r requirements.txt
 
 pip freeze
+
+python -m django --version
 
 deactivates 
 
