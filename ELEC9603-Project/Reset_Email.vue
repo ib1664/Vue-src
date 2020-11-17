@@ -58,8 +58,8 @@
             </v-card-text>
 
             <v-card-action>
-                <v-btn v-if="this.isReset" class="mx-auto btn" color="primary" width="150" :disabled="!validForm" @click="resetFunc"> Reset </v-btn>
-                <v-btn v-else class="mx-auto btn" color="primary" width="150" :disabled="!validForm" @click="resetPwd"> Submit </v-btn>
+                <v-btn v-if="this.isReset" class="mx-auto" color="primary" width="150" :disabled="!validForm" @click="resetFunc"> Reset </v-btn>
+                <v-btn v-else class="mx-auto" color="primary" width="150" :disabled="!validForm" @click="resetPwd"> Submit </v-btn>
             </v-card-action>
 
             <v-card-text v-if="this.isReset">
