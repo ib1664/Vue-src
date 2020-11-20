@@ -1,0 +1,35 @@
+this.$router.push('/emailSent');
+
+developer documentation
+
+deployment environment 
+security vul
+
+database permission 
+distribute fil
+
+make
+
+client side ren
+
+nginx load bal
+port 80
+
+ec2-13-238-182-224.ap-southeast-2.compute.amazonaws.com/api
+
+5522	run root	
+
+https://www.youtube.com/watch?v=nZ3BaTY8c9M
+
+https://www.youtube.com/watch?v=VG_oJVAFVD4
+
+https://www.youtube.com/watch?v=awFLzy0XwXo
+
+when someone logs into an application 
+when pressing send we make a http post request from front end
+we attach message data into body of the message 
+send to internal api
+the api stores message into database and broadcast message to other logged in listeners 
+gets posted onto screen to anyonw who request them
+
+Packaging is a process bundling application resources to an format

@@ -1,0 +1,30 @@
+A host runtime environment:
+The software that hosts a client-side web application. Host runtime environments are either directly built on, 
+or provide similar functionality to, a Web browser.
+
+must associate the runtime environment on the end-user's computer.
+
+The package is a resource that encapsulates references the essential parts of the application.
+
+An XML document that shows how the application and host runtime environment should be configured when the application is instantiated
+that describes how the application and host runtime environment should be configured when the application is instantiated.
+declares properties and behaviours of various components of the application and the host runtime environment.
+
+A set of programming interfaces that provide functionality specific to client-side Web applications. 
+Current Widget APIs range extensibly in the level of functionality they provide an author; 
+see for example Microsoft's API for Windows Vista Sidebar Gadgets
+
+
+
+
+Resources
+Images, text, graphical user interface markup, style sheets, executable code and other possible parts of the application.
+Resources may be organized in folders or otherwise structured and may have folder versions tailored
+to localization purposes
+
+Date lets web site and advertises on how we used web
+
+A small piece of data stored on the user's computer by the web browser while browsing a website.
+Allows websites to remember stateful information
+
+designed to be a reliable mechanism for websites to remember stateful information
